@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "The raw data from nyc taxi trips"
+    database: module3-of-zoomcamp # Project id
+    schema: nyc_taxi # dataset
+    tables:
+      - name: yellow_tripdata_ext
+      - name: green_tripdata_ext
