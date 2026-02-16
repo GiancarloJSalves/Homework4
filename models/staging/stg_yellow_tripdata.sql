@@ -13,7 +13,7 @@ SELECT
     store_and_fwd_flag,
     CAST(passenger_count AS int) AS passenger_count,
     CAST(trip_distance AS float64) AS trip_distance,
-    CAST(trip_type AS int) AS trip_type,
+    1 AS trip_type,
 
     -- payment info
     CAST(fare_amount AS numeric) AS fare_amount,
@@ -21,7 +21,7 @@ SELECT
     CAST(mta_tax AS numeric) AS mta_tax,
     CAST(tip_amount AS numeric) AS tip_amount,
     CAST(tolls_amount AS numeric) AS tolls_amount,
-    CAST(ehail_fee AS numeric) AS ehall_fee,
+    0 AS ehail_fee,
     CAST(total_amount AS numeric) AS total_amount,
     CAST(payment_type AS numeric) AS payment_type,
     CAST(congestion_surcharge AS numeric) AS congestion_surcharge,
