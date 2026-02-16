@@ -10,4 +10,6 @@ trips_unioned AS (
     SELECT * FROM green_tripdata
     UNION ALL
     SELECT * FROM yellow_tripdata
-),
+)
+
+SELECT * FROM trips_unioned
